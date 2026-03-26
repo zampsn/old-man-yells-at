@@ -18,6 +18,9 @@
     "test": "npx vitest --coverage",
     "build": "tsc"
   },
+  "engines": {
+    "node": ">=25.0.0"
+  },
   "devDependencies": {
     "@vitest/coverage-v8": "^4.1.1",
     "vitest": "^4.1.1"
