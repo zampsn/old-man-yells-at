@@ -1,0 +1,25 @@
+{
+  "name": "old-man-yells-at",
+  "version": "1.0.0",
+  "description": "Old man yells at generator",
+  "homepage": "https://github.com/zampsn/old-man-yells-at#readme",
+  "bugs": {
+    "url": "https://github.com/zampsn/old-man-yells-at/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zampsn/old-man-yells-at.git"
+  },
+  "license": "MIT",
+  "author": "zampsn",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx vitest --coverage",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.1.1",
+    "vitest": "^4.1.1"
+  }
+}
