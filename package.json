@@ -11,6 +11,7 @@
     "url": "git+https://github.com/zampsn/old-man-yells-at.git"
   },
   "license": "MIT",
+  "user": "zampsn",
   "author": "zampsn",
   "type": "module",
   "scripts": {
