@@ -1,0 +1,33 @@
+name: Publish Release
+
+on:
+  # workflow_dispatch:
+  push:
+
+jobs:
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Not implemented
+        run: |
+          echo "::warning::Not Implemented"
+
+  publish:
+    name: Publish Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Not implemented
+        run: |
+          echo "::warning::Not Implemented"
