@@ -2,7 +2,9 @@ name: Release
 run-name: ${{ github.ref == 'refs/heads/main' && 'Release (publish)' || 'Release (dry-run)' }}
 
 on:
+  pull_request:
   push:
+    branches: [ main ]
 
 jobs:
   release:
