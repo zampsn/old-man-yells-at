@@ -1,6 +1,6 @@
 {
-  "name": "old-man-yells-at",
-  "version": "1.0.0",
+  "name": "@zampsn/old-man-yells-at",
+  "version": "0.0.2",
   "description": "Old man yells at generator",
   "homepage": "https://github.com/zampsn/old-man-yells-at#readme",
   "bugs": {
@@ -13,12 +13,20 @@
   "license": "MIT",
   "author": "zampsn",
   "type": "module",
-  "main": "index.js",
   "scripts": {
     "test": "vitest run --coverage",
     "build": "tsc",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   },
   "engines": {
     "node": ">=25.0.0"

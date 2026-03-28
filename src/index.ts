@@ -1,1 +1,5 @@
-console.log('Hello, World!');
+export const FOO = 'bar';
+
+export interface User {
+    name: string;
+}
