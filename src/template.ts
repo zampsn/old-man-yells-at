@@ -1,13 +1,12 @@
 /**
- * @summary template loads the static/old-man-yells-at.png from github.com/zampsn/old-man-yells-at.
- * This needs to be read from some public source (not a local file) so that any package consumer can use this base image.
+ * @summary template fetches the old-man-yells-at.png base image from GitHub.
  *
- * For security, we verify the checksum of the image, not sure if some weird sophisticated attack vector exist with png's, but better safe then sorry ¯\(ツ)/¯
+ * For security, we verify the checksum of the image on first access.
  */
 import { createHash } from 'node:crypto';
 
 const EXPECTED_CHECKSUM = '7e0095f6b841b97f2745afcdc803b0895028de7caeeeb665e158ef6a20f35b80';
-const TEMPLATE_URL = `https://github.com/zampsn/old-man-yells-at/blob/main/static/old-man-yells-at.png?raw=true`;
+const TEMPLATE_URL = 'https://github.com/zampsn/old-man-yells-at/blob/main/static/old-man-yells-at.png?raw=true';
 
 let cachedTemplate: Buffer | undefined;
 
