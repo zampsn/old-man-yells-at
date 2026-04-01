@@ -21,6 +21,9 @@
     "release": "semantic-release",
     "release:dry-run": "semantic-release --dry-run"
   },
+  "bin": {
+    "old-man-yells-at": "./dist/cli.js"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
