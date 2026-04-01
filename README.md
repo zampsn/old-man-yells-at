@@ -12,13 +12,25 @@ You've got an opinion. A strong one. About something that probably doesn't deser
 
 ## Getting Started
 
+### CLI
+
+```sh
+# run directly with npx
+npx old-man-yells-at <input-image> [output-file]
+
+# examples
+npx old-man-yells-at photo.png                # outputs old-man-yells-at.png
+npx old-man-yells-at photo.png meme.png       # custom output path
+npx old-man-yells-at photo.png -s 256          # custom size (default: 128)
+```
+
 ### Install
 
 ```sh
 npm install old-man-yells-at@v1
 ```
 
-### Usage
+### Programmatic Usage
 
 ```ts
 import { yellAt } from 'old-man-yells-at';
